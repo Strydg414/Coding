@@ -6,37 +6,48 @@ int main()
 {
 	const float X = 2;
 	const double pi = 3.14;
-	double a, b, d, P, L, S, N, sum1, sum2, sum3, sum;
+	double a, b, d, P, L, S, N, sum1, sum2, sum3, sum; 
 	cout << "vibor zadachi 1-5:";
 	cin >> N; // выбор задачки
 	if (N == 1) {
-		cout << " a   b " << endl;
+		cout << "S = a * b " << endl;
+		cout << "P = 2 * (a + b)" << endl;
+		cout << "a=";
 		cin >> a;
+		cout << "b=";
 		cin >> b;
 		S = a * b;
 		P = 2 * (a + b);
 		cout << "P=" << P << endl;
-		cout << "P=" << S << endl;
+		cout << "S=" << S << endl;
 	}
 	else
 		if (N == 2) {
-			cout << "d" << endl;
+			cout << "L = pi * d" << endl;
+			cout << "d=";
 			cin >> d;
 			L = pi * d;
 			cout << "L=" << L;
 		}
 		else
 			if (N == 3) {
-				cout << " a   b " << endl;
+				cout << " srednee = (a + b) / 2 " << endl;
+				cout << "a=";
 				cin >> a;
+				cout << "b=";
 				cin >> b;
 				sum1 = (a + b) / 2;
 				cout << "srednee=" << sum1;
 			}
 			else
 				if (N == 4) {
-					cout << " a   b " << endl;
+					cout << "slozhenie" << endl;
+					cout << "raznost" << endl;
+					cout << "proizvedenie" << endl;
+					cout << "chastnoe" << endl;
+					cout << "a=";
 					cin >> a;
+					cout << "b=";
 					cin >> b;
 					sum1 = a + b;
 					sum = a - b;
@@ -48,8 +59,13 @@ int main()
 					cout << "chastnoe=" << sum3 << endl;
 				}else
 					if (N == 5) {
-						cout << " a   b " << endl;
+						cout << "slozhenie" << endl;
+						cout << "raznost" << endl;
+						cout << "proizvedenie" << endl;
+						cout << "chastnoe" << endl;
+						cout << "a=";
 						cin >> a;
+						cout << "b=";
 						cin >> b;
 						sum = abs(a) + abs(b);
 						sum1 = abs(a) - abs(b);
