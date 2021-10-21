@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 using  namespace std;
 
@@ -72,15 +72,14 @@ int main()
 						double a, b, x; //x nayiti x=(-b)/a
 						cout << "A=";
 						cin >> a;
-						do
-						{
-							cout << "A = 0, vvedite A:";
-							cin >> a;
-						} while (a == 0);
 						cout << "B=";
 						cin >> b;
 						x = -b / a;
-						cout << "x=" << x;
+						if (a == 0) {
+							cout << "znachenie a neverno";
+						}
+						else
+							cout << "x=" << x;
 					}
 					else
 						if (N == 6)  //Найти решение системы линейных уравнений вида A1·x + B1·y = C1   ,   A2·x + B2·y = C2
@@ -104,7 +103,15 @@ int main()
 							x = xx / f;
 							y = yy / f;
 							cout << "x=" << x;
-							cout << "y=" << y;
+							if (y = -0) {
+								y = 0;
+							}
+							else
+								if (x = -0) {
+								x = 0;
+							}
+							else
+								cout << "y=" << y;
 						}
 	return 0;
 }
