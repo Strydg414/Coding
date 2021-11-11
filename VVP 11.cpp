@@ -60,22 +60,31 @@ int main()
 	}
 	if (N == 3) //На плоскости расположены три точки: A, B, C. 
 	{    //Определить, какая из двух последних точек (B или C) расположена ближе к A, и вывести эту точку и ее расстояние от точки A.
-		int a, b, c;
-		cout << "A:";
-		cin >> a;
-		cout << "B:"; 
-		cin >> b;
-		cout << "C:";
-		cin >> c;
-		if (abs(a - b) < abs(a - c))
-		{
-			cout << "B:" << abs(a - b);
-		}
-		else
-		{
-			cout << "C:" << abs(a - c);
-		}
-		return 0;
+		float b,c Ax, Ay, Bx, By, Cx, Cy;
+						 cout << "Введите координаты точек А, В, С: ";
+						 cout << "Ax:";
+						 cin >> Ax;
+						 cout << "Ay:";
+						 cin >> Ay;
+						 cout << "Bx:";
+						 cin >> Bx;
+						 Cout << "By:";
+						 cin >> By;
+						 cout << "Cx:";
+						 cin >> Cx;
+						 cout << "Cy:";
+						 cin >> Cy;
+						 b = pow(pow(abs(Ax - Bx), 2) + pow(abs(Ay - By), 2), 0.5);
+						 c = pow(abs(Ax - Bx), 2) + pow(abs(Cy - Cy), 0.5);
+						 if (b < c)
+						 {
+							 cout « "B " « distanceB « endl;
+						 }
+						 else
+						 {
+							 cout « "C " « distanceC « endl;
+						 }
+						 return 0;
 	}
 	if (N == 4) //Даны координаты точки, не лежащей на координатных осях OX и OY.
 	{          // Определить номер координатной четверти, в которой находится данная точка
