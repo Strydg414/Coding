@@ -123,21 +123,22 @@ int main()
 		{
 			arr.push_back(i);
 		}
-		cout << "Чётные числа в массиве:";
+		cout << "Числа с нечетными номерами в массиве:";
 		for (int i = 1; i <= n; i++)
-		{
-			if (i % 2 == 0)//chentie
-			{
-				cout << arr[i] << " ";
-			}
-		}
-		cout << endl << "Нечетные числа в массиве:";
-		for (int i = n; i >= 0; i--)
 		{
 			if (i % 2 == 1)//necehet
 			{
 				cout << arr[i] << " ";
 			}
 		}
+		cout << endl << "Числа с четными номерами в массиве:";
+		for (int i = n; i >= 1; i--)
+		{
+			if (i % 2 == 0)//chentie
+			{
+				cout << arr[i] << " ";
+			}
+		}
+		
 	}
 }//1+ 2+ 4+ 5+
